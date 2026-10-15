@@ -44,7 +44,15 @@ Google returns a verdict, and {{product_name}} maps it to one of the following v
     </tbody>
 </table>
 
-Because these values are ordered, a sensible rule is `Android integrity` equals `MEETS_DEVICE_INTEGRITY` or stronger, rather than merely "not failed".
+When Google returns more than one verdict, {{product_name}} keeps the strongest one, so a device that meets strong integrity always reports `MEETS_STRONG_INTEGRITY`.
+
+The **Android integrity** attribute supports only the `equals` and `not equals` operators, so a rule cannot say "this level or stronger" directly. To accept genuine devices only, exclude the weaker values rather than merely the failed one. For example, the following conditions accept `MEETS_STRONG_INTEGRITY` and `MEETS_DEVICE_INTEGRITY`:
+
+```text
+androidIntegrity not equals MEETS_BASIC_INTEGRITY
+AND androidIntegrity not equals MEETS_VIRTUAL_INTEGRITY
+AND androidIntegrity not equals INTEGRITY_FAILED
+```
 
 ## iOS device genuine
 
