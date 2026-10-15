@@ -72,6 +72,8 @@ To create a policy:
 
     3. Add the conditions the device must meet. For each condition, select an attribute, an operator, and a value. The attributes offered depend on the platform.
 
+    ![Configure the execution rule for each platform]({{base_path}}/assets/img/guides/device-management/device-assurance-policy-rules.png){: width="600" style="display: block; margin: 0; border: 0.3px solid lightgrey;"}
+
     Then, click **Next**.
 
     !!! warning
