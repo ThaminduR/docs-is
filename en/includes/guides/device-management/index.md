@@ -11,7 +11,7 @@ Device management has two halves, and it helps to keep them separate:
 - **Assurance** - How you check, on every sign-in, that the device still meets your security requirements.
 
 !!! note "Before you begin"
-    Device registration is only supported in [app-native authentication]({{base_path}}/guides/authentication/app-native-authentication/). Your users must sign in through a native application rather than through a browser redirect. See [Configure device registration]({{base_path}}/guides/device-management/configure-device-registration/) to understand what this means for your rollout.
+    Device registration requires a native mobile or desktop application that can generate and protect a key pair on the device. Users who only use your application in a browser cannot register a device. See [Configure device registration]({{base_path}}/guides/device-management/configure-device-registration/#a-native-application-is-required) to understand what this means for your rollout.
 
 ## Explore device management
 
@@ -28,3 +28,5 @@ The guides below start with policies, because a policy is the thing you referenc
 - [Configure device registration]({{base_path}}/guides/device-management/configure-device-registration/) - Enroll devices through self-registration, invited user registration, or a dedicated registration flow.
 
 - [View the devices of a user]({{base_path}}/guides/device-management/view-user-devices/) - Review the devices registered against a user account.
+
+- [Manage registered devices]({{base_path}}/guides/user-self-service/manage-registered-devices/) - Let users review, rename, deactivate, and remove their own devices from the My Account portal.
