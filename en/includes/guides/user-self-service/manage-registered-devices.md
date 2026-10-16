@@ -13,7 +13,7 @@ This guide explains how users can rename, deactivate, and remove their registere
     ![Registered devices in My Account]({{base_path}}/assets/img/guides/organization/self-service/myaccount/registered-devices.png){: width="800" style="display: block; margin: 0; border: 0.3px solid lightgrey;"}
 
 !!! note
-    The **Registered devices** section is shown only when the user has at least one registered device.
+    If no devices are registered to the account, the section shows that there are no registered devices. Devices are registered from applications, not from My Account.
 
 ## Rename a device
 
